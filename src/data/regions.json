@@ -1,0 +1,40 @@
+{
+  "regiones": [
+    {
+      "id": "CL-AI",
+      "articles": [
+        {
+          "id": "geoglifos",
+          "es": {
+            "titulo": "Geoglifos de la cultura Chinchorro",
+            "contenido": "Descripción sobre los geoglifos.",
+            "imagenes": ["path/to/arica1.jpg"]
+          },
+          "en": {
+            "title": "Chinchorro Culture Geoglyphs",
+            "content": "Description about the geoglyphs.",
+            "images": ["path/to/arica1.jpg"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "CL-MA",
+      "articles": [
+        {
+          "id": "desierto-atacama",
+          "es": {
+            "titulo": "Desierto de Atacama",
+            "contenido": "Descripción sobre el desierto.",
+            "imagenes": ["path/to/atacama1.jpg"]
+          },
+          "en": {
+            "title": "Atacama Desert",
+            "content": "Description about the desert.",
+            "images": ["path/to/atacama1.jpg"]
+          }
+        }
+      ]
+    }
+  ]
+}
