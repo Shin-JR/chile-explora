@@ -1,21 +1,12 @@
-import React from "react";
-import "./MapChile.css"; // Importa los estilos
+import React from 'react';
+import './MapChile.css'; // Importa los estilos
 
-const MapChile = ({ svgContent }) => {
-  const handleRegionClick = (event) => {
-    const regionTitle = event.target.getAttribute("title");
-    if (regionTitle) {
-      console.log(`Clicked on region: ${regionTitle}`);
-    }
-  };
-
+const MapChile = ({ svgContent, isHorizontal, handleRegionClick }) => {
   return (
-    <div className="map-container">
-      <h1>Mapa de Chile</h1>
+    <div className={`map ${isHorizontal ? 'horizontal' : ''}`}>
       <div
-        className="map"
         onClick={handleRegionClick}
-        dangerouslySetInnerHTML={{ __html: svgContent }} // Renderiza el SVG aquí
+        dangerouslySetInnerHTML={{ __html: svgContent }}
       />
     </div>
   );
